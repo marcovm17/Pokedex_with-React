@@ -1,0 +1,465 @@
+.pokeId__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.pokeIdcard {
+    width: 100%;
+    max-width: 550px;
+    border-radius: 1.5em;
+    border: 0.7em solid #ccc;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.942);
+}
+
+.pokecardIdBtn {
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: none;
+    font-size: 3.3vh;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.284);
+}
+
+.pokeIdcard__image:hover {
+    transform: scale(1.05);
+}
+
+.pokeIdcard__header {
+    background-color: #999;
+    aspect-ratio: 2;
+    position: relative;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.pokeIdcard__image {
+    position: absolute;
+    width: 60%;
+    left: 50%;
+    transition: transform 150ms ease;
+    translate: -50%;
+}
+
+.pokeIdcard__body {
+    padding: 3.5em 1em 2em;
+}
+
+.pokeIdcard__name {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 0.2em;
+}
+
+.pokeIdcard__types {
+    display: flex;
+    justify-content: center;
+    gap: 0.7em;
+    margin-bottom: 1em;
+    font-weight: 500;
+}
+
+.pokeIdcard__typename {
+    padding: 5px;
+    color: #ffffff;
+}
+
+.pokeIdcard__typename {
+    text-transform: capitalize;
+}
+
+.pokeIdcard__typename:nth-child(2)::before {
+    padding-right: 0.7em;
+}
+
+.pokedexidpage__characteristics__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 2em 3em;
+    margin: 1em auto;
+}
+
+.pokedexidpage__characteristics__item {
+    display: grid;
+    gap: var(--sp-0-5);
+    justify-items: center;
+};
+
+.pokedexidpage__characteristics__name {
+    font-size: var(--size-normal);
+    font-weight: var(--weight-regular);
+    color: #0F0F2D;
+    line-height: normal;
+}
+
+.pokedexidpage__characteristics__value {
+    font-size: var(--size-normal);
+    font-weight: var(--weight-medium);
+    line-height: normal;
+}
+
+.pokeIdcard__hr {
+    margin-bottom: 1em;
+    border: 1px solid #ccc4;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.pokeIdcard__stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 1.5em 0.2em;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.pokeIdcard__stat {
+    display: grid;
+    gap: 0.5em;
+    justify-items: center;
+
+}
+
+.pokeIdcard__stat__name {
+    font-size: 0.7em;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.pokeIdcard__stat__value {
+    font-weight: 500;
+    font-size: 1rem;
+    border-radius: 10%;
+    border-bottom-style: inset;
+    padding: 5px;
+}
+
+.abilities {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.pokedexidpage__title-abilities {
+    color: #0e0e0e;
+    font-size: medium;
+    font-weight: 300;
+}
+.pokedexidpage__list-abilities {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+}
+
+.pokedexidpage__abilityname {
+    font-size: 20px;
+    color: #131313;
+    padding: 2px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.fire-gradient {
+    background: linear-gradient(176.37deg, #f96d6f -32.26%, #e35825 22.55%, #e8ae1b 125.72%);
+}
+
+.fire-border {
+    border-color: #ec6535;
+}
+
+.fire-color {
+    color: #ec6535;
+}
+
+.fire-background {
+    background-color: #ec6535;
+}
+
+.grass-gradient {
+    background: linear-gradient(172.92deg, #7ec6c5 0.92%, #abdac6 47.96%, #cae099 99.08%);
+}
+
+.grass-color {
+    color: yellowgreen;
+}
+
+.grass-border {
+    border-color: #99e0c2
+}
+
+.grass-background {
+    background-color: #99e0c2
+}
+
+.water-gradient {
+    background: linear-gradient(179.57deg, #0b1d32 -70.14%, #1479fb 56.16%, #96bef4 214.85%);
+}
+
+.water-color {
+    color: #1479fb;
+}
+
+.water-border {
+    border-color: #2a86ff;
+}
+
+.water-background {
+    background-color: #2a86ff;
+}
+
+.bug-gradient {
+    background: linear-gradient(177.56deg, #62db60 -32.26%, #d0e325 22.55%, #1be85c 125.72%);
+}
+
+.bug-border {
+    border-color: #8fff3a;
+}
+
+.bug-color {
+    color: #6ad81b;
+}
+
+.bug-background {
+    background-color: #6ad81b;
+}
+
+.normal-gradient {
+    background: linear-gradient(179.57deg, #ffffff -70.14%, #363131 56.16%, #000000 214.85%);
+}
+
+.normal-border {
+    border-color: #515151;
+}
+
+.normal-color {
+    color: rgb(128, 128, 128);
+}
+
+.normal-background {
+    background-color: rgb(128, 128, 128);
+}
+
+.poison-gradient {
+    background: linear-gradient(179.57deg, #c183d7 -30.14%, #5a0e8d 56.16%, #001df7 214.85%);
+}
+
+.poison-border {
+    border-color: #7a41a1;
+}
+
+.poison-color {
+    color: #5a0e8d;
+}
+
+.poison-background {
+    background-color: #5a0e8d;
+}
+
+.electric-gradient {
+    background: linear-gradient(176.37deg, #fffd75 -32.26%, #ffd900 22.55%, #f5f6cd 125.72%);
+}
+
+.electric-border {
+    border-color: #ffd900d3;
+}
+
+.electric-color {
+    color: #e8e10c;
+}
+
+.electric-background {
+    background-color: #e8e10c;
+}
+
+.ground-gradient {
+    background: linear-gradient(176.37deg, #ffe5ae -32.26%, #af964c 22.55%, #e0cea3 125.72%);
+}
+
+.ground-border {
+    border-color: #af964cdf;
+}
+
+.ground-color {
+    color: #af964c;
+}
+
+.ground-background {
+    background-color: #af964c;
+}
+
+.psychic-gradient {
+    background: linear-gradient(176.37deg, #f96d6f -32.26%, #e32591 22.55%, #f60303 125.72%);
+}
+
+.psychic-border {
+    border-color: #e32591;
+}
+
+.psychic-color {
+    color: #e32591;
+}
+
+.psychic-background {
+    background-color: #e32591;
+}
+
+.fighting-gradient {
+    background: linear-gradient(176.37deg, #a06df9 -32.26%, #ff8502 22.55%, #fadf8f 125.72%);
+}
+
+.fighting-border {
+    border-color: #ff8502;
+}
+
+.fighting-color {
+    color: #ff8502;
+}
+
+.fighting-background {
+    background-color: #ff8502;
+}
+
+.ice-gradient {
+    background: linear-gradient(172.92deg, #91dfde 0.92%, #236eb4ef 47.96%, #915cce 99.08%);
+}
+
+.ice-color {
+    color: #91dfde;
+}
+
+.ice-border {
+    border-color: #91dfde
+}
+
+.ice-background {
+    background-color: #91dfde
+}
+
+.rock-gradient {
+    background: linear-gradient(176.37deg, #693421eb -32.26%, #B48D7C 32.55%, #9e6401 125.72%);
+}
+
+.rock-border {
+    border-color: #947568;
+}
+
+.rock-color {
+    color: #947568;
+}
+
+.rock-background {
+    background-color: #947568;
+}
+
+.dark-gradient {
+    background: linear-gradient(177.56deg, #a95ef4 -32.26%, #000000 22.55%, #620b0b 125.72%);
+}
+
+.dark-border {
+    border-color: #201728;
+}
+
+.dark-color {
+    color: #4a2569;
+}
+
+.dark-background {
+    background-color: #4a2569;
+}
+
+.ghost-gradient {
+    background: linear-gradient(177.56deg, #fa00cc -32.26%, #000000 22.55%, #af0c81 125.72%);
+}
+
+.ghost-border {
+    border-color: #320926;
+}
+
+.ghost-color {
+    color: #af0c81;
+}
+
+.ghost-background {
+    background-color: #af0c81;
+}
+
+.dragon-gradient {
+    background: linear-gradient(177.56deg, #620b0b -32.26%, #000000 22.55%, #ff0000 125.72%);
+}
+
+.dragon-border {
+    border-color: #400606;
+}
+
+.dragon-color {
+    color: #4a0909;
+}
+
+.dragon-background {
+    background-color: #4a0909;
+}
+
+.fairy-gradient {
+    background: linear-gradient(177.56deg, #9b82ff -32.26%, #ff84ed 22.55%, #ff0059 125.72%);
+}
+
+.fairy-border {
+    border-color: #ff84ed;
+}
+
+.fairy-color {
+    color: #ff84ed;
+}
+
+.fairy-background {
+    background-color: #ff84ed;
+}
+
+.steel-gradient {
+    background: linear-gradient(177.56deg, #030034 -32.26%, #676784 22.55%, #2f587d 125.72%);
+}
+
+.steel-border {
+    border-color: #676784;
+}
+
+.steel-color {
+    color: #676784;
+}
+
+.steel-background {
+    background-color: #676784;
+}
+
+.flying-gradient {
+    background: linear-gradient(177.56deg, #030034 -32.26%, #676784 22.55%, #2f587d 125.72%);
+}
+
+.flying-border {
+    border-color: #656593;
+}
+
+.flying-color {
+    color: #343478;
+}
+
+.flying-background {
+    background-color: #3e3e7c;
+}

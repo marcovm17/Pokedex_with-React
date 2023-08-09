@@ -1,0 +1,122 @@
+.logo{
+    display: flex;
+    justify-content: center;
+}
+.pokedexPage__container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    background-size: cover;
+    background-position: center;
+}
+
+.pokedexPage__header {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.pokedexPage__welcome {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.pokedexPage__form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.pokedexPage__form-submit {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.pokedexPage__form-btn {
+    padding: 10px 20px;
+    background-color: #eb0000;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.pokedexPage__selectype {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.pokedexPage__selectype select {
+    padding: 8px;
+    font-size: 14px;
+    border: 2px solid #ff0000;
+    border-radius: 5px;
+}
+
+.pokedexPage__selectype select:focus {
+    outline: none;
+    border-color: #eb00003b;
+    background-color: #87000029;
+}
+
+.pokedexPage__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* Estilos para los botones de paginación */
+.pokedexPage__pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pokedexPage__pagination button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    font-size: 14px;
+    background-color: #eb0000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 25vh;
+    padding: 10px;
+    margin: 10px;
+}
+
+.pokedexPage__pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.header__pokedexPage {
+    background-image: linear-gradient(to bottom, #eb0000df, #eb0000 65%, rgb(50, 50, 50) 40%, rgb(0, 0, 0));
+    text-align: center;
+    padding: 10px;
+    background-position: 100vh;
+    position: relative;
+}
+
+.pokeball {
+    padding-top: 5px;
+    width: 80px;
+    transform: translate(400%, 0%);
+}
+
+.pokeball {
+    width: 100px;
+    height: 100px;
+};
