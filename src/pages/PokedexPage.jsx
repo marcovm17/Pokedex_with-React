@@ -40,14 +40,14 @@ const PokedexPage = () => {
 
   return (
     <div className='pokedex'>
-      <div className='logo'>
+      <div className='logo__pokedex'>
         <img className="pokedex__logo" src={logo} alt="pokedexlogo" />
       </div>
       <div className='pokedexPage__container'>
         <div className='pokedexPage__header'>
           <p className='pokedexPage__welcome'><span>Welcome {trainer}!</span>, here you could find your favorite pokemon.</p>
           <form className='pokedexPage__form' onSubmit={handleSubmit}>
-            <input className='pokedexPage__form-submit' placeholder={'write the name of your favorite pokemon..'} ref={inputSearch} type='text' />
+            <input className='pokedexPage__form-submit' placeholder={'Write the name of your favorite pokemon..'} ref={inputSearch} type='text' />
             <button className='pokedexPage__form-btn'>Search</button>
           </form>
         </div>

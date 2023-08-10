@@ -26,15 +26,12 @@ const HomePage = () => {
           <div className='pokedex__container-submit'>
             <form onSubmit={handleSubmit}>
               <input placeholder={'Write your name..'} id="inputTrainer" ref={inputTrainer} type="text" />
-              <button>Gotta catch'em all!</button>
+              <button className='button__homepage'>Gotta catch'em all!</button>
             </form>
           </div>
           <img className="pokedex__img" src={pokedex1} alt="pokedex" />
         </div>
       </div>
-      <header className='header'>
-        <img className='pokeball' src={pokeball} alt="" />
-      </header>
     </div>
   );
 };

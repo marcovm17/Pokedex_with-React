@@ -1,9 +1,9 @@
-.logo{
+.logo__pokedex{
     display: flex;
     justify-content: center;
 }
 .pokedexPage__container {
-    max-width: 960px;
+    max-width: 1160px;
     margin: 0 auto;
     padding: 20px;
     font-family: Arial, sans-serif;
@@ -33,11 +33,11 @@
 }
 
 .pokedexPage__form-submit {
-    flex: 1;
     padding: 10px;
     border: 1px solid #ccc;
     border-right: none;
     border-radius: 5px 0 0 5px;
+    font-size: 12px;
 }
 
 .pokedexPage__form-btn {
@@ -73,8 +73,8 @@
 
 .pokedexPage__cards {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 10px;
 }
 
 /* Estilos para los botones de paginación */
@@ -105,18 +105,11 @@
 .header__pokedexPage {
     background-image: linear-gradient(to bottom, #eb0000df, #eb0000 65%, rgb(50, 50, 50) 40%, rgb(0, 0, 0));
     text-align: center;
-    padding: 10px;
     background-position: 100vh;
     position: relative;
 }
 
 .pokeball {
-    padding-top: 5px;
-    width: 80px;
-    transform: translate(400%, 0%);
+    width: 110px;
+    transform: translate(300%, 0%);
 }
-
-.pokeball {
-    width: 100px;
-    height: 100px;
-};
